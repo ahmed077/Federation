@@ -66,6 +66,12 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="12645152_800727103390300_783724127642302295_n.jpg" alt="Second slide">
                 </div>
+<!--                Edit #8
+               added one more carousel item with placeholder image because bootstrap carousel requires at least 3
+               -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="http://picsum.photos/1920" alt="placeholder image">
+                </div>
 
             </div>
             
@@ -97,28 +103,49 @@
     
     <div class="container">
     <h2>MEMBERS</h2>
-
-    <div class="contain">
-      <img src="12.jpg" alt="Avatar" class="phto">
-      <div class="overlay">
-        <div class="txt">Hello World</div>
-      </div>
-    </div>
-        
+<!--    Edit #7
+added div with class row to use grid system
+-->
+<div class="row">
+    <div class="col-6 d-flex justify-content-center align-items-center">
         <div class="contain">
-      <img src="cartoon-man-icon-person-design-vector-graphic-concept-represented-isolated-flat-illustration-73697341.jpg" alt="Avatar" class="phto">
-      <div class="overlay">
-        <div class="txt">Hello World</div>
-      </div>
+          <img src="12.jpg" alt="Avatar" class="phto">
+          <div class="overlay">
+            <div class="txt">Hello World</div>
+          </div>
+        </div>
     </div>
+   <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="contain">
+          <img src="cartoon-man-icon-person-design-vector-graphic-concept-represented-isolated-flat-illustration-73697341.jpg" alt="Avatar" class="phto">
+          <div class="overlay">
+            <div class="txt">Hello World</div>
+          </div>
+        </div>
     </div>
+</div> 
     <br><br><br><br><br>
-
-    <div class="container" style="background-color: rgba(1,1,1,1); ">    
+</div>
+<!--  Edit #6
+      added footer tag and gave it background color style to fill the whole width of page
+  -->
+   <footer style="background-color: rgba(1,1,1,1);">
+    <div class="container" style="background-color: rgba(1,1,1,1); "> 
+<!--
+                         Edit #3   
                       <h1 class="text-center" style="color:white">Get In Touch</h1>
+                      added class py-3 to give padding to heading
+-->
+                      <h1 class="text-center py-3" style="color:white">Get In Touch</h1>
 
     <form class="form-inline">
-        <table class="table  table-dark" style="background-color: rgba(1,1,1,1); font-size:small;">
+<!--        
+       Edit #5
+       <table class="table  table-dark" style="background-color: rgba(1,1,1,1); font-size:small;">
+       removed background-color style
+        removed table-dark class to remove background color
+       -->
+        <table class="table text-white" style="font-size:small;">
             <tbody>
             <tr>
               <td scope="col"></td>
@@ -129,13 +156,15 @@
                 <td></td>
 
               <td scope="col" colspan="3">
-                  
+<!--                  Edit #4 
+               Change background-color from 1,1,1,.1 to 255,255,255,.1
+               -->
                 <input type="text" class="form-control form-control-sm"
-                        style="background-color: rgba(1,1,1,0.1);" placeholder="Name">
+                        style="background-color: rgba(255,255,255,0.1);" placeholder="Name">
                   <br><br> <input type="email" class="form-control form-control-sm"
-                               style="background-color: rgba(1,1,1,0.1);" placeholder="Email">
+                               style="background-color: rgba(255,255,255,0.1);" placeholder="Email">
                   <br><br> <input type="text" class="form-control form-control-sm"
-                        style="background-color: rgba(1,1,1,0.1);" placeholder="Your Message">
+                        style="background-color: rgba(255,255,255,0.1);" placeholder="Your Message">
                   
                   <br><br> <button type="submit" class="btn btn-primary" >Submit</button>
                 </td>
@@ -145,7 +174,11 @@
         </table>
         </form>   
         </div>
+        </footer>
+<!--    Edit #2
+       Removed space at the bottom of page
     <br>    <br>
+    -->
 
     
 
@@ -159,6 +192,11 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
 </script>
-    
+<!--
+        Edit #1
+            Added bootstrap javascript file for carousel
+-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </body>
 </html>
